@@ -1,16 +1,24 @@
 {
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
     },
     "test": {},
     "typecheck": {},
     "lint": {},
     "lint:fix": {},
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     }
   },
-  "globalDependencies": ["tsconfig.base.json"]
+  "globalDependencies": [
+    "tsconfig.base.json"
+  ]
 }
