@@ -13,16 +13,19 @@
     "typecheck": "turbo run typecheck",
     "server:build": "turbo run build --scope=*server*",
     "server:start": "yarn server:build && yarn workspace @my-monorepo/server run start",
-    "server:dev": "yarn workspace @my-monorepo/server run dev",
-    "is-even": "yarn workspace @my-monorepo/is-even run start",
-    "is-odd": "yarn workspace @my-monorepo/is-odd run start"
+    "server:dev": "yarn workspace @my-monorepo/server run dev"
   },
   "dependencies": {
     "turbo": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "eslint": "latest",
+    "esbuild": "latest"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.17"
+  "packageManager": "yarn@1.22.18"
 }

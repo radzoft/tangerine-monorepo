@@ -17,9 +17,8 @@
     "test:watch": "yarn test -- --watch"
   },
   "dependencies": {
-    "@my-monorepo/is-even": "*",
-    "@my-monorepo/is-odd": "*",
-    "express": "^4.17.1"
+    "@my-monorepo/shared": "*",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@my-monorepo/eslint-config": "*",
@@ -32,7 +31,6 @@
     "eslint": "^8.1.0",
     "jest": "^27.3.1",
     "nodemon": "^2.0.14",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^4.4.4"
+    "npm-run-all": "^4.1.5"
   }
 }
